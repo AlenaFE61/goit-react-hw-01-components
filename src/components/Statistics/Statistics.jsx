@@ -1,20 +1,7 @@
 import propTypes from 'prop-types';
 import css from './Ststistics.module.css';
+import {createColor} from '../Color/funcColor';
 
-const createColor = () => {
-  const color =
-    'rgba(' +
-    Math.round(Math.random() * 255) +
-    ',' +
-    Math.round(Math.random() * 255) +
-    ',' +
-    Math.round(Math.random() * 255) +
-    ',' +
-    0.5 +
-    ')';
-
-  return color;
-};
 
 export const Statistics = ({title,stats}) =>{
   return(
